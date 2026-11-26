@@ -1,15 +1,15 @@
-Order of execution (shortest burst among arrived processes):
-t= 0: P1 selected (burst 8)
-t= 8: P5 selected (burst 2)
-t=10: P2 selected (burst 4)
-t=14: P4 selected (burst 5)
-t=19: P3 selected (burst 9)
+Execution order (highest priority among waiting processes):
+t= 0: P1 (priority 3) runs for 10 units
+t=10: P2 (priority 1) runs for 5 units
+t=15: P4 (priority 2) runs for 6 units
+t=21: P3 (priority 4) runs for 8 units
+t=29: P5 (priority 5) runs for 3 units
 
-Process	Arrival	Burst	Completion	Turnaround	Waiting
-P1	0	8	8		8		0
-P2	1	4	14		13		9
-P3	2	9	28		26		17
-P4	3	5	19		16		11
-P5	4	2	10		6		4
-Average waiting time    = 8.20
-Average turnaround time = 13.80
+Process	Arrival	Burst	Priority	Completion	Turnaround	Waiting
+P1	0	10	3		10		10		0
+P2	1	5	1		15		14		9
+P3	2	8	4		29		27		19
+P4	3	6	2		21		18		12
+P5	4	3	5		32		28		25
+Average waiting time    = 13.00
+Average turnaround time = 19.40
