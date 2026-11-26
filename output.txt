@@ -1,10 +1,15 @@
-FCFS Scheduling (arrival time = 0 for all)
-Process	Burst	Waiting	Turnaround
-P1	10	0	10
-P2	5	10	15
-P3	8	15	23
-P4	12	23	35
-P5	6	35	41
-Average waiting time    = 16.60
-Average turnaround time = 24.80
-Gantt chart: 0 -P1- 10 -P2- 15 -P3- 23 -P4- 35 -P5- 41
+Order of execution (shortest burst among arrived processes):
+t= 0: P1 selected (burst 8)
+t= 8: P5 selected (burst 2)
+t=10: P2 selected (burst 4)
+t=14: P4 selected (burst 5)
+t=19: P3 selected (burst 9)
+
+Process	Arrival	Burst	Completion	Turnaround	Waiting
+P1	0	8	8		8		0
+P2	1	4	14		13		9
+P3	2	9	28		26		17
+P4	3	5	19		16		11
+P5	4	2	10		6		4
+Average waiting time    = 8.20
+Average turnaround time = 13.80
