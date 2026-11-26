@@ -1,0 +1,4 @@
+Before fork: PID=1392, PPID=1391
+[Child ] PID=1393, Parent PID=1392
+[Parent] PID=1392, Child PID=1393
+Child has terminated; parent exits.
