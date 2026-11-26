@@ -1,4 +1,10 @@
-Before fork: PID=1392, PPID=1391
-[Child ] PID=1393, Parent PID=1392
-[Parent] PID=1392, Child PID=1393
-Child has terminated; parent exits.
+FCFS Scheduling (arrival time = 0 for all)
+Process	Burst	Waiting	Turnaround
+P1	10	0	10
+P2	5	10	15
+P3	8	15	23
+P4	12	23	35
+P5	6	35	41
+Average waiting time    = 16.60
+Average turnaround time = 24.80
+Gantt chart: 0 -P1- 10 -P2- 15 -P3- 23 -P4- 35 -P5- 41
