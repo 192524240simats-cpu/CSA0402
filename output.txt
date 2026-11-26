@@ -1,15 +1,9 @@
-Execution order (highest priority among waiting processes):
-t= 0: P1 (priority 3) runs for 10 units
-t=10: P2 (priority 1) runs for 5 units
-t=15: P4 (priority 2) runs for 6 units
-t=21: P3 (priority 4) runs for 8 units
-t=29: P5 (priority 5) runs for 3 units
-
-Process	Arrival	Burst	Priority	Completion	Turnaround	Waiting
-P1	0	10	3		10		10		0
-P2	1	5	1		15		14		9
-P3	2	8	4		29		27		19
-P4	3	6	2		21		18		12
-P5	4	3	5		32		28		25
-Average waiting time    = 13.00
-Average turnaround time = 19.40
+Process	Burst	Waiting	Turnaround
+P4	3	0	3
+P5	4	3	7
+P1	6	7	13
+P3	7	13	20
+P2	8	20	28
+Average waiting time    = 8.60
+Average turnaround time = 14.20
+Gantt chart: 0 |P4| 3 |P5| 7 |P1| 13 |P3| 20 |P2| 28
